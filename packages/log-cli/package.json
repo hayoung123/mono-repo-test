@@ -1,0 +1,29 @@
+{
+  "name": "log-cli",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "송하영 <proshy@woowahan.com>",
+  "homepage": "https://github.com/hayoung123/mono-repo-test#readme",
+  "license": "ISC",
+  "main": "lib/log-cli.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hayoung123/mono-repo-test.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/hayoung123/mono-repo-test/issues"
+  },
+  "dependencies": {
+    "commander": "^9.0.0"
+  }
+}
