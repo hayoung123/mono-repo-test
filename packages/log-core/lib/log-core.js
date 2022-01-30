@@ -1,7 +1,5 @@
-'use strict';
+import red from 'chalk';
 
-module.exports = logCore;
-
-function logCore() {
-    // TODO
+export default function core() {
+  console.log(red('❤  Running Core !!!!!'));
 }
