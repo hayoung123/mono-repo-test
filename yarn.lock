@@ -2852,6 +2852,11 @@ lodash@^4.17.15, lodash@^4.17.19, lodash@^4.7.0:
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
+log-core@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/log-core/-/log-core-1.0.1.tgz#fcb0b4715f704f442bc7e769bfd2107808d5fe8d"
+  integrity sha512-JM7z6BqtQbhoLjY9WAHrWBKKU8JLB0q2h95cWsUG/dD1c3rqBRR39B7NWP1aQGQyoGQYQYgpqf7LyNbxVx8nLQ==
+
 lru-cache@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-6.0.0.tgz#6d6fe6570ebd96aaf90fcad1dafa3b2566db3a94"
