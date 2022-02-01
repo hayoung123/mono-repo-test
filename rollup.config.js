@@ -1,18 +1,18 @@
-import babel from "@rollup/plugin-babel";
-import commonjs from "@rollup/plugin-commonjs";
-import resolve from "@rollup/plugin-node-resolve";
-import peerDepsExternal from "rollup-plugin-peer-deps-external";
-import typescript from "rollup-plugin-typescript2";
+import babel from '@rollup/plugin-babel';
+import commonjs from '@rollup/plugin-commonjs';
+import resolve from '@rollup/plugin-node-resolve';
+import peerDepsExternal from 'rollup-plugin-peer-deps-external';
+import typescript from 'rollup-plugin-typescript';
 
-const excludePath = "node_modules/**";
+const excludePath = 'node_modules/**';
 
-const extensions = [".js", ".jsx", ".ts", ".tsx"];
+const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
 export default {
-  input: "src/main.ts",
+  input: 'src/main.ts',
   output: {
-    file: "bundle.js",
-    format: "cjs",
+    file: 'bundle.js',
+    format: 'cjs',
   },
   plugins: [typescript()],
 };
@@ -20,7 +20,7 @@ export default {
 function buildJS(input, output, format) {
   const defaultOutputConfig = {
     format,
-    exports: "named",
+    exports: 'named',
     sourcemap: true,
   };
 
@@ -35,8 +35,8 @@ function buildJS(input, output, format) {
 
   const config = {
     input,
-    external: ["react"],
-    output: [format === "es" ? esOutputConfig : cjsOutputConfig],
+    external: ['react'],
+    output: [format === 'es' ? esOutputConfig : cjsOutputConfig],
     plugins: [
       peerDepsExternal(),
       commonjs(),
@@ -45,14 +45,14 @@ function buildJS(input, output, format) {
         extensions,
       }),
       babel({
-        presets: ["@babel/env", "@babel/preset-typescript"],
-        plugins: ["@babel/plugin-transform-runtime"],
-        babelHelpers: "runtime",
+        presets: ['@babel/env', '@babel/preset-typescript'],
+        plugins: ['@babel/plugin-transform-runtime'],
+        babelHelpers: 'runtime',
         exclude: excludePath,
         extensions,
       }),
     ],
-    preserveModules: format === "es",
+    preserveModules: format === 'es',
   };
 
   return config;
