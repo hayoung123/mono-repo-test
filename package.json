@@ -1,0 +1,31 @@
+{
+  "name": "mono-setting",
+  "version": "0.0.0",
+  "description": "mono-setting-repository",
+  "main": "index.js",
+  "repository": "https://github.com/hayoung123/mono-repo-test",
+  "author": "hayoung <proshy1@naver.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "lerna run build"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.12",
+    "@babel/plugin-transform-runtime": "^7.16.10",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@babel/runtime": "^7.16.7",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "lerna": "^4.0.0",
+    "rollup": "^2.66.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.31.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.5"
+  }
+}
